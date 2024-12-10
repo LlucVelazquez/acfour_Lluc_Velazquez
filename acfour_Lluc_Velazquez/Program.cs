@@ -4,26 +4,58 @@
     {
         const string Msg = "Quants nombres naturals vols?: ";
         const string DemanarNum = "Introdueix un nombre: ";
-        static void Main()
+        const string FormatError = "No has introduit un nombre natural";
+        const string OverflowError = "El nombre introduit es massa gran";
+        const string Error = "Error inesperat";
+        public static void Main()
         {
             int cuants = 0;
+
+            Console.WriteLine(Msg);
+            cuants = InsertNumException(cuants);
+
+            int[] nums = new int[cuants];
+
+            InsertNum(nums);
+            WriteNum(nums);
+
+        }
+        public static int InsertNumException(int num)
+        {
+
             try
             {
-                Console.WriteLine(Msg);
-                cuants = Int16.Parse(Console.ReadLine());
+                num = Int16.Parse(Console.ReadLine());
             }
-            catch (InvalidDataException)
+            catch (FormatException)
             {
-
+                Console.WriteLine(FormatError);
+                num = 1;
             }
-            
-            int[] nums = new int[cuants];
+            catch (OverflowException)
+            {
+                Console.WriteLine(OverflowError);
+                num = 1;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine(Error);
+                num = 1;
+            }
+            return num;
+        }
+        public static void InsertNum(int[] nums)
+        {
             for (int i = 0; i < nums.Length; i++)
             {
                 Console.WriteLine(DemanarNum);
-                nums[i] = Int16.Parse(Console.ReadLine());
+                nums[i] = InsertNumException(nums[i]);
+
             }
-            for (int i = 0;i < nums.Length; i++)
+        }
+        public static void WriteNum(int[] nums)
+        {
+            for (int i = 0; i < nums.Length; i++)
             {
                 Console.Write($"{nums[i]} ");
             }
