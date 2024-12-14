@@ -19,6 +19,7 @@
             InsertNum(nums);
             WriteNum(nums);
 
+
             BubbleSort(nums);
 
             for (int i = 0; i < nums.Length; i++)
@@ -26,6 +27,16 @@
                 Console.Write($"{nums[i]} ");
             }
 
+        }
+
+        public static void InsertNum(int[] nums)
+        {
+            for (int i = 0; i < nums.Length; i++)
+            {
+                Console.WriteLine(DemanarNum);
+                nums[i] = InsertNumException(nums[i]);
+
+            }
         }
         public static int InsertNumException(int num)
         {
@@ -50,15 +61,6 @@
                 num = 1;
             }
             return num;
-        }
-        public static void InsertNum(int[] nums)
-        {
-            for (int i = 0; i < nums.Length; i++)
-            {
-                Console.WriteLine(DemanarNum);
-                nums[i] = InsertNumException(nums[i]);
-
-            }
         }
         public static void WriteNum(int[] nums)
         {
