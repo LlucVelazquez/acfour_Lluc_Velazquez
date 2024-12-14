@@ -6,3 +6,7 @@
 [https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/statements/exception-handling-statements](https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/statements/exception-handling-statements)
 [https://sites.google.com/itb.cat/entornsprogramacioiprocesos/teoria/t2-fonaments-de-la-programació?](https://sites.google.com/itb.cat/entornsprogramacioiprocesos/teoria/t2-fonaments-de-la-programació?)
 [https://stackoverflow.com/questions/41145083/how-do-i-test-a-try-catch](https://stackoverflow.com/questions/41145083/how-do-i-test-a-try-catch)
+[https://softwareengineering.stackexchange.com/questions/101952/should-i-use-try-catch-in-my-test-methods](https://softwareengineering.stackexchange.com/questions/101952/should-i-use-try-catch-in-my-test-methods)
+[https://stackoverflow.com/questions/37660311/method-for-handling-exceptions-in-mstest](https://stackoverflow.com/questions/37660311/method-for-handling-exceptions-in-mstest)
+[https://code-maze.com/csharp-testing-exceptions-in-mstest-nunit-and-xunit/](https://code-maze.com/csharp-testing-exceptions-in-mstest-nunit-and-xunit/)
+[https://youtu.be/awbUzFhVo3Q?si=FVcQYJJ2wKdoWt2E](https://youtu.be/awbUzFhVo3Q?si=FVcQYJJ2wKdoWt2E)
